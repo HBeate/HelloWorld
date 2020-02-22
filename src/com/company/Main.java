@@ -5,9 +5,39 @@ public class Main {
     public static void main(String[] args) {
         String myEncryptedMessage = "";
         String myOriginalMessage = "";
+        String myMessageWithoutUmlaute = "";
+        String myUmlaute = "";
+        String myMessage = "DAS.IST!EINE?GEHEIME;NACHRICHT-!?! Test mit Umlauten: Ö Ä Ü ß. Ich komme aus Österreich";
+        for (int i = 0; i < myMessage.length(); i++) {
 
-        String myMessage = "DAS.IST!EINE?GEHEIME;NACHRICHT-!?!";
-        System.out.println("\nMeine ursprüngliche Nachricht:  \t\t\t" + myMessage);    // \n -> new line
+            char mychar = myMessage.charAt(i);              // charAt -> liest aus einer Position einen Charakter aus
+            switch (mychar) {
+                case 'Ö':
+                    myUmlaute = "OE";
+                    myMessageWithoutUmlaute = myMessageWithoutUmlaute + myUmlaute;
+                    break;
+                case 'Ä':
+                    myUmlaute = "AE";
+                    myMessageWithoutUmlaute = myMessageWithoutUmlaute + myUmlaute;
+                    break;
+                case 'Ü':
+                    myUmlaute = "UE";
+                    myMessageWithoutUmlaute = myMessageWithoutUmlaute + myUmlaute;
+                    break;
+                case 'ß':
+                    myUmlaute = "SS";
+
+                    myMessageWithoutUmlaute = myMessageWithoutUmlaute + myUmlaute;
+                    break;
+                default:
+                    myMessageWithoutUmlaute = myMessageWithoutUmlaute + mychar;
+            }
+        }
+        System.out.println("Meine original Nachricht: \t\t\t\t" + myMessage);
+        System.out.println("Meine original Nachricht ohne Umlaute: \t" + myMessageWithoutUmlaute);
+        myMessage = myMessageWithoutUmlaute.toUpperCase();
+
+        System.out.println("Meine Nachricht ohne Umlaute & groß:  \t" + myMessage);    // \n -> new line
 
         for (int i = 0; i < myMessage.length(); i++) {      // liest die Länge der Nachricht ein
 
@@ -29,7 +59,7 @@ public class Main {
 
             }
         }
-        System.out.println("\nMeine verschlüsselte Nachricht: \t\t\t" + myEncryptedMessage);
+        System.out.println("Meine verschlüsselte Nachricht: \t\t" + myEncryptedMessage);
 
         for (int i = 0; i < myMessage.length(); i++) {
 
@@ -52,6 +82,6 @@ public class Main {
             }
 
         }
-        System.out.println("\nMeine wieder entschlüsselte Nachricht:  \t" + myOriginalMessage);
+        System.out.println("Meine wieder entschlüsselte Nachricht:  " + myOriginalMessage);
     }
 }
