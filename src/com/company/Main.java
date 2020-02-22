@@ -2,7 +2,10 @@ package com.company;
 
 public class Main {
 
+
+
     public static void main(String[] args) {
+        int offset = 5;
         String myEncryptedMessage = "";
         String myOriginalMessage = "";
         String myMessageWithoutUmlaute = "";
@@ -26,7 +29,6 @@ public class Main {
                     break;
                 case 'ß':
                     myUmlaute = "SS";
-
                     myMessageWithoutUmlaute = myMessageWithoutUmlaute + myUmlaute;
                     break;
                 default:
@@ -39,28 +41,15 @@ public class Main {
 
         System.out.println("Meine Nachricht ohne Umlaute & groß:  \t" + myMessage);    // \n -> new line
 
-        for (int i = 0; i < myMessage.length(); i++) {      // liest die Länge der Nachricht ein
+        myEncryptedMessage = encrypt(myEncryptedMessage, myMessage, offset);
+        decrypt(myEncryptedMessage, myOriginalMessage, myMessage, offset);
+    }
 
-            char mychar = myMessage.charAt(i);              // charAt -> liest aus einer Position einen Charakter aus
-            switch (mychar) {
-                case '!':
-                case '?':
-                case '.':
-                case ',':
-                case ';':
-                case '-':
-                case '(':
-                case ')':
-                    myEncryptedMessage = myEncryptedMessage + mychar;       //Diese Sonderzeichen werden nicht verschlüsselt
-                    break;
-                default:
-                    mychar += 2;                                    // rutscht im ASCII code um zwei Stellen weiter
-                    myEncryptedMessage = myEncryptedMessage + mychar;
 
-            }
-        }
-        System.out.println("Meine verschlüsselte Nachricht: \t\t" + myEncryptedMessage);
 
+
+
+    private static void decrypt(String myEncryptedMessage, String myOriginalMessage, String myMessage, int offset) {
         for (int i = 0; i < myMessage.length(); i++) {
 
             char mychar = myEncryptedMessage.charAt(i);
@@ -76,12 +65,36 @@ public class Main {
                     myOriginalMessage = myOriginalMessage + mychar;       //Diese Sonderzeichen werden nicht verschlüsselt
                     break;
                 default:
-                    mychar -= 2;                                    // rutscht im ASCII code um zwei Stellen weiter
+                    mychar -= offset;                                    // rutscht im ASCII code um zwei Stellen weiter
                     myOriginalMessage = myOriginalMessage + mychar;
-
             }
-
         }
         System.out.println("Meine wieder entschlüsselte Nachricht:  " + myOriginalMessage);
+    }
+
+
+
+    private static String encrypt(String myEncryptedMessage, String myMessage, int offset) {
+        for (int i = 0; i < myMessage.length(); i++) {      // liest die Länge der Nachricht ein
+
+            char mychar = myMessage.charAt(i);              // charAt -> liest aus einer Position einen Charakter aus
+            switch (mychar) {
+                case '!':
+                case '?':
+                case '.':
+                case ',':
+                case ';':
+                case '-':
+                case '(':
+                case ')':
+                    myEncryptedMessage = myEncryptedMessage + mychar;       //Diese Sonderzeichen werden nicht verschlüsselt
+                    break;
+                default:
+                    mychar += offset;                                    // rutscht im ASCII code um zwei Stellen weiter
+                    myEncryptedMessage = myEncryptedMessage + mychar;
+            }
+        }
+        System.out.println("Meine verschlüsselte Nachricht: \t\t" + myEncryptedMessage);
+        return myEncryptedMessage;
     }
 }
