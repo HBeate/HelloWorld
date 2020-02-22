@@ -3,22 +3,27 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here
-        String myMessage = "DASISTEINEGEHEIMANACHRICHT";
-        System.out.println(myMessage);
-        System.out.println();
+        String myNewMessage = "";
+        String myOldMessage = "";
+        String myMessage = "DASISTEINEGEHEIMENACHRICHT";
+        System.out.println("\n Meine ursprüngliche Nachricht: " + myMessage);    // \n -> new line
 
-        for (int i = 0; i < myMessage.length(); i++) {
+        for (int i = 0; i < myMessage.length(); i++) {      // liest die Länge der Nachricht ein
 
-            char mychar = myMessage.charAt(i); // liest aus einer Position einen Charakter aus
-            mychar += 2;
-            System.out.print(mychar);
+            char mychar = myMessage.charAt(i);              // charAt -> liest aus einer Position einen Charakter aus
+            mychar += 2;                                    // rutscht im ASCII code um zwei Stellen weiter
+            myNewMessage = myNewMessage + mychar;
         }
- /*      String[] myMessageArray = myMessage.split("");
-       for (String character : myMessageArray){
-           character +=2;
-           System.out.print(character);
+        System.out.println("Meine verschlüsselte Nachricht: "+ myNewMessage);
 
-        } */ //Check out CharAt auf der Folie STRINGS
+        for (int i = 0; i < myMessage.length(); i++) {      // liest die Länge der Nachricht ein
+
+            char mychar = myNewMessage.charAt(i);              // charAt -> liest aus einer Position einen Charakter aus
+            mychar -= 2;                                    // rutscht im ASCII code um zwei Stellen weiter
+            myOldMessage = myOldMessage + mychar;
+
+
+        }
+        System.out.println("\n Meine wieder entschlüsselte Nachricht: " + myOldMessage);
     }
 }
