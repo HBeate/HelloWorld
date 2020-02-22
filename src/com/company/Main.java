@@ -16,10 +16,10 @@ public class Main {
         }
         System.out.println("Meine verschlüsselte Nachricht: "+ myNewMessage);
 
-        for (int i = 0; i < myMessage.length(); i++) {      // liest die Länge der Nachricht ein
+        for (int i = 0; i < myMessage.length(); i++) {
 
-            char mychar = myNewMessage.charAt(i);              // charAt -> liest aus einer Position einen Charakter aus
-            mychar -= 2;                                    // rutscht im ASCII code um zwei Stellen weiter
+            char mychar = myNewMessage.charAt(i);
+            mychar -= 2;                                    // rutscht im ASCII code um zwei Stellen zurück
             myOldMessage = myOldMessage + mychar;
 
 
