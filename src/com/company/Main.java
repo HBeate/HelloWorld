@@ -41,14 +41,47 @@ public class Main {
 
         System.out.println("Meine Nachricht ohne Umlaute & groß:  \t" + myMessage);    // \n -> new line
 
-        myEncryptedMessage = encrypt(myEncryptedMessage, myMessage, offset);
-        decrypt(myEncryptedMessage, myOriginalMessage, myMessage, offset);
+        String meinVerschluesseltes = crytAnyway(myMessage, offset, false);
+        String meinEntschluesseltes = crytAnyway(meinVerschluesseltes, offset, true);
+        System.out.println("Meine verschlüsselte Nachricht:  " + meinVerschluesseltes);
+        System.out.println("Meine wieder entschlüsselte Nachricht:  " + meinEntschluesseltes);
+       // myEncryptedMessage = encrypt(myEncryptedMessage, myMessage, offset);
+      //  decrypt(myEncryptedMessage, myOriginalMessage, myMessage, offset);
+
     }
 
 
+    private static String crytAnyway(String message,  int offset, boolean decrypt) {
+        String myNewMessage = "";
+        for (int i = 0; i < message.length(); i++) {
 
+            char mychar = message.charAt(i);
+            switch (mychar) {
+                case '!':
+                case '?':
+                case '.':
+                case ',':
+                case ';':
+                case '-':
+                case '(':
+                case ')':
+                    myNewMessage = myNewMessage + mychar;       //Diese Sonderzeichen werden nicht verschlüsselt
+                    break;
+                default:
+                    if(decrypt){
+                        mychar -= offset;
+                    } else {                         // rutscht im ASCII code um zwei Stellen weiter
+                        mychar += offset;
+                    }
+                    myNewMessage = myNewMessage + mychar;
+            }
+        }
 
+        return myNewMessage;
 
+    }
+
+/*
     private static void decrypt(String myEncryptedMessage, String myOriginalMessage, String myMessage, int offset) {
         for (int i = 0; i < myMessage.length(); i++) {
 
@@ -97,4 +130,5 @@ public class Main {
         System.out.println("Meine verschlüsselte Nachricht: \t\t" + myEncryptedMessage);
         return myEncryptedMessage;
     }
+*/
 }

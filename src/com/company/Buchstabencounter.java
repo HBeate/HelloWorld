@@ -1,28 +1,32 @@
 package com.company;
 
+import java.awt.desktop.SystemSleepEvent;
+import java.util.Scanner;
+
 public class Buchstabencounter {
+
     public static void main(String[] args) {
+        String inputText = "Das ist mein Text!";
+        char[] textToChar = inputText.toCharArray();
+        inputText = inputText.toUpperCase();
+        System.out.println(inputText);
+        Scanner textScanner = new Scanner(System.in);
+        int[] alphabet = new int[127];
 
-        int counter = 0;
-        int counterLetter= 0;
-        String myText = "Das ist mein Text und ich sollte herausfinden wieviele Buchstaben darin enthalten sind.\n";
-        myText = myText.toUpperCase();
-        System.out.println(myText);
+        int[] letterCounter = new int[alphabet.length];
+        System.out.println("letterCounter Länge; " + letterCounter.length);
+        for (int i = 0; i < alphabet.length; i++) {
+            char mychar = inputText.charAt(i);
+            for (int j = 0; j < alphabet.length; j++) {
 
-
-        for (int i = 0; i < myText.length(); i++) {
-            counter++;                                  //Zählt Zeichen im gesamten Text
-            char mychar = myText.charAt(i);
-            switch (mychar) {
-                case 'E':
-                    counterLetter++;
-                    break;
-                case 'F':
-                    counterLetter++;
-                    break;
             }
-        }System.out.println("Es gibt " + counterLetter + " E." );
-        System.out.println("Der Text ist " + counter + " Zeichen lang."); System.out.println(counterLetter);
 
+
+            System.out.print(alphabet[i]);
+        }
+
+        System.out.println(letterCounter);
     }
+
 }
+
