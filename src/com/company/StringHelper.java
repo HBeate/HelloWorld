@@ -13,7 +13,7 @@ public class StringHelper {
 
         //   String result = reverseString("Hansi ist nett");
         //   String result = reverseStringVariant2("Hansi ist nett");
-        // printAmountOfLetters("Das ist schoen");
+        //   printAmountOfLetters("Das ist schoen");
     }
 
 

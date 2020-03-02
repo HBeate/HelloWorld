@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e42976aa-f687-4c1d-a555-a5a485ab8d72" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/TicTacToe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/StringHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StringHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/StringsFromBookp136.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StringsFromBookp136.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/WörterErraten.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/WörterErraten.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="209" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Cäsar" />
@@ -32,35 +38,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="extract.method.default.visibility" value="private" />
   </component>
-  <component name="RunManager" selected="Application.WörterErraten">
-    <configuration name="Buchstabencounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Buchstabencounter" />
-      <module name="Caeser" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CharacterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.CharacterTest" />
-      <module name="Caeser" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TicTacToe">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="Caeser" />
@@ -73,6 +57,32 @@
     </configuration>
     <configuration name="StringHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.StringHelper" />
+      <module name="Caeser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringsFromBookp136" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.StringsFromBookp136" />
+      <module name="Caeser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicTacToe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.TicTacToe" />
       <module name="Caeser" />
       <extension name="coverage">
         <pattern>
@@ -99,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TicTacToe" />
+        <item itemvalue="Application.StringsFromBookp136" />
         <item itemvalue="Application.WörterErraten" />
         <item itemvalue="Application.StringHelper" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.CharacterTest" />
-        <item itemvalue="Application.Buchstabencounter" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582917014756</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Wörter erraten funktionsfähig">
+      <created>1582979111066</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1582979111066</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -225,15 +242,24 @@
     <MESSAGE value="Decrypt und Encrypt in Methoden ausgelagert" />
     <MESSAGE value="Noch keine Ahnung wie ich das Buchstabenproblem am besten löse" />
     <MESSAGE value="StringHelper - Problem solved, exercise completed ;-)" />
-    <option name="LAST_COMMIT_MESSAGE" value="StringHelper - Problem solved, exercise completed ;-)" />
+    <MESSAGE value="Wörter erraten funktionsfähig" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wörter erraten funktionsfähig" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2627" y="14" key="CommitChangelistDialog2" timestamp="1582979051903">
+    <state x="2947" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1583166544297">
+      <screen x="1920" y="0" width="2560" height="1400" />
+    </state>
+    <state x="2947" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583166544297" />
+    <state x="2627" y="14" key="CommitChangelistDialog2" timestamp="1582979110410">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582376457248" />
-    <state x="2627" y="14" key="CommitChangelistDialog2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582979051903" />
+    <state x="2627" y="14" key="CommitChangelistDialog2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582979110410" />
     <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582312441556" />
+    <state width="396" height="466" key="DebuggerActiveHint" timestamp="1583180758571">
+      <screen x="1920" y="0" width="2560" height="1400" />
+    </state>
+    <state width="396" height="466" key="DebuggerActiveHint/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583180758571" />
     <state width="2517" height="541" key="GridCell.Tab.-1.bottom" timestamp="1582968622809">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
@@ -246,34 +272,34 @@
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="541" key="GridCell.Tab.-1.left/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582968622809" />
-    <state width="2517" height="533" key="GridCell.Tab.-1.right" timestamp="1582977228795">
+    <state width="2517" height="533" key="GridCell.Tab.-1.right" timestamp="1582980925876">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="533" key="GridCell.Tab.-1.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582977228795" />
-    <state width="2517" height="263" key="GridCell.Tab.0.bottom" timestamp="1582978242606">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state width="2517" height="533" key="GridCell.Tab.-1.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582980925876" />
+    <state width="1493" height="237" key="GridCell.Tab.0.bottom" timestamp="1583191785407">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1478" height="172" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582569719737" />
-    <state width="2517" height="263" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582978242606" />
-    <state width="2517" height="610" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582578668314" />
-    <state width="2517" height="263" key="GridCell.Tab.0.center" timestamp="1582978242606">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state width="2517" height="483" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583183578664" />
+    <state width="1493" height="237" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583191785407" />
+    <state width="1493" height="237" key="GridCell.Tab.0.center" timestamp="1583191785406">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1478" height="172" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582569719737" />
-    <state width="2517" height="263" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582978242606" />
-    <state width="2517" height="610" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582578668314" />
-    <state width="2517" height="263" key="GridCell.Tab.0.left" timestamp="1582978242606">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state width="2517" height="483" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583183578664" />
+    <state width="1493" height="237" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583191785406" />
+    <state width="1493" height="237" key="GridCell.Tab.0.left" timestamp="1583191785406">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1478" height="172" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582569719737" />
-    <state width="2517" height="263" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582978242606" />
-    <state width="2517" height="610" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582578668314" />
-    <state width="2517" height="263" key="GridCell.Tab.0.right" timestamp="1582978242606">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state width="2517" height="483" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583183578664" />
+    <state width="1493" height="237" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583191785406" />
+    <state width="1493" height="237" key="GridCell.Tab.0.right" timestamp="1583191785407">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1478" height="172" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582569719737" />
-    <state width="2517" height="263" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582978242606" />
-    <state width="2517" height="610" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582578668314" />
+    <state width="2517" height="483" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583183578664" />
+    <state width="1493" height="237" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583191785407" />
     <state width="2517" height="541" key="GridCell.Tab.1.bottom" timestamp="1582968612755">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
@@ -298,23 +324,41 @@
     <state width="1478" height="324" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582568626045" />
     <state width="2517" height="541" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582968612755" />
     <state width="2517" height="610" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582578668314" />
-    <state x="2522" y="248" key="Vcs.Push.Dialog.v2" timestamp="1582917018609">
+    <state x="3015" y="635" key="ReplaceDuplicatesPrompt" timestamp="1583176059803">
+      <screen x="1920" y="0" width="2560" height="1400" />
+    </state>
+    <state x="3015" y="635" key="ReplaceDuplicatesPrompt/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583176059803" />
+    <state x="2522" y="248" key="Vcs.Push.Dialog.v2" timestamp="1582979112634">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582376459736" />
-    <state x="2522" y="248" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582917018609" />
+    <state x="2522" y="248" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582979112634" />
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582312444622" />
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1582963263382">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582963263382" />
+    <state x="2904" y="594" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583166550911">
+      <screen x="1920" y="0" width="2560" height="1400" />
+    </state>
+    <state x="2904" y="594" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583166550911" />
     <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582312561322">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1582312561322" />
-    <state x="742" y="85" key="extract.method.dialog" timestamp="1582372180233">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="3157" y="144" width="540" height="496" key="extract.method.dialog" timestamp="1583176263329">
+      <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="742" y="85" key="extract.method.dialog/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582372180233" />
+    <state x="3157" y="144" width="540" height="496" key="extract.method.dialog/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583176263329" />
+    <state x="2863" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1583166540026">
+      <screen x="1920" y="0" width="2560" height="1400" />
+    </state>
+    <state x="2863" y="315" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583166540026" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Cäsar$WörterErraten.ic" NAME="WörterErraten Coverage Results" MODIFIED="1582997399058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.company.*</FILTER>
+    </SUITE>
   </component>
 </project>

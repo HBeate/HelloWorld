@@ -7,9 +7,11 @@ import java.util.Scanner;
 
 public class WörterErraten {
     public static void main(String[] args) {
+        System.out.println("\nWÖRTER ERRATEN\nTippe einen Buchstaben oder das ganze Lösungswort. \nDu hast so viele Versuche wie das Wort Buchstaben hat.\n");
+
         Scanner scan = new Scanner(System.in);
 
-        String[] wordsToGuess = new String[17];
+        String[] wordsToGuess = new String[18];
         wordsToGuess[0] = "Trinkschokolade";
         wordsToGuess[1] = "Orangensaft";
         wordsToGuess[2] = "Weisswein";
@@ -27,6 +29,8 @@ public class WörterErraten {
         wordsToGuess[14] = "Traubensaft";
         wordsToGuess[15] = "Schnaps";
         wordsToGuess[16] = "Likör";
+        wordsToGuess[17] = "Cocktail";
+
 
         Random random = new Random();
         int randomWordNumber = random.nextInt(wordsToGuess.length - 1);                   //Wählt random von der Array
