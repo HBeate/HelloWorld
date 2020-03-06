@@ -1,5 +1,6 @@
 package com.company;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class TicTacToe {
@@ -11,14 +12,12 @@ public class TicTacToe {
         char[][] field = initializeField();
         printField(field);
 
-        boolean isPlayerOne = true;
-
-
+        boolean isPlayerO = true;
         while (true) {
-            if (isPlayerOne) {
-                System.out.println("Enter your choice Player 1 ");
+            if (isPlayerO) {
+                System.out.println("Enter your choice Player (O)");
             } else {
-                System.out.println("Enter your choice Player 2");
+                System.out.println("Enter your choice Player (X)");
             }
             Scanner input = new Scanner(System.in);
             String userInput = input.next();
@@ -26,19 +25,17 @@ public class TicTacToe {
             int x = Integer.parseInt(in[0]);
             int y = Integer.parseInt(in[1]);
 
-            if (isPlayerOne) {
-
+            if (isPlayerO &&(field[x][y] ==' ') ) {
                 field[x][y] = 'O';
-
-            } else {
+            } else if ((field[x][y] ==' ')){
                 field[x][y] = 'X';
-
             }
 
-            isPlayerOne = isPlayerOne ? false : true;
+            isPlayerO = isPlayerO ? false : true;
             printField(field);
             if (isGameOver(field)) {
-                System.out.println("Vorbei");
+                System.out.println("We have a winner!");
+
             }
         }
     }
@@ -51,9 +48,10 @@ public class TicTacToe {
                 return true;
             } else if (field[0][0] == field[1][1] && field[1][1] == field[2][2] && field[i][i] != ' ') {
                 return true;
-            } else if (field[0][2] == field[1][1] && field[1][1] == field[2][0] && field[2-i][i] != ' ') {
+            } else if (field[0][2] == field[1][1] && field[1][1] == field[2][0] && field[2 - i][i] != ' ') {
                 return true;
             }
+
         } return false;
     }
 
