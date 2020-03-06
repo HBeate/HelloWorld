@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e42976aa-f687-4c1d-a555-a5a485ab8d72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/AufgabenVomBuch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/StringsFromBookp136.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StringsFromBookp136.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TicTacToe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -242,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583192381390</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="TicTacToe - prüft, ob es einen Gewinner gibt &amp; überschreibt Inputs nicht mehr">
+      <created>1583513166572</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1583513166572</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -261,7 +266,8 @@
     <MESSAGE value="Wörter erraten funktionsfähig" />
     <MESSAGE value="TicTacToe in Arbeit" />
     <MESSAGE value="Wörter erraten - fertig" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wörter erraten - fertig" />
+    <MESSAGE value="TicTacToe - prüft, ob es einen Gewinner gibt &amp; überschreibt Inputs nicht mehr" />
+    <option name="LAST_COMMIT_MESSAGE" value="TicTacToe - prüft, ob es einen Gewinner gibt &amp; überschreibt Inputs nicht mehr" />
   </component>
   <component name="WindowStateProjectService">
     <state x="566" y="298" width="403" height="236" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1583239249921">
@@ -272,11 +278,11 @@
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2947" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583166544297" />
-    <state x="424" y="8" key="CommitChangelistDialog2" timestamp="1583192380617">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2627" y="14" key="CommitChangelistDialog2" timestamp="1583513165743">
+      <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582376457248" />
-    <state x="2627" y="14" key="CommitChangelistDialog2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582979110410" />
+    <state x="2627" y="14" key="CommitChangelistDialog2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583513165743" />
     <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583192380617" />
     <state width="396" height="466" key="DebuggerActiveHint" timestamp="1583180758571">
       <screen x="1920" y="0" width="2560" height="1400" />
@@ -298,29 +304,29 @@
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="533" key="GridCell.Tab.-1.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582980925876" />
-    <state width="2517" height="233" key="GridCell.Tab.0.bottom" timestamp="1583513047242">
+    <state width="2517" height="233" key="GridCell.Tab.0.bottom" timestamp="1583528915809">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="233" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583511195904" />
-    <state width="2517" height="233" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583513047242" />
+    <state width="2517" height="233" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583528915809" />
     <state width="1493" height="268" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583505427319" />
-    <state width="2517" height="233" key="GridCell.Tab.0.center" timestamp="1583513047242">
+    <state width="2517" height="233" key="GridCell.Tab.0.center" timestamp="1583528915808">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="233" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583511195904" />
-    <state width="2517" height="233" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583513047242" />
+    <state width="2517" height="233" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583528915808" />
     <state width="1493" height="268" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583505427319" />
-    <state width="2517" height="233" key="GridCell.Tab.0.left" timestamp="1583513047241">
+    <state width="2517" height="233" key="GridCell.Tab.0.left" timestamp="1583528915808">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="233" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583511195904" />
-    <state width="2517" height="233" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583513047241" />
+    <state width="2517" height="233" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583528915808" />
     <state width="1493" height="268" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583505427319" />
-    <state width="2517" height="233" key="GridCell.Tab.0.right" timestamp="1583513047242">
+    <state width="2517" height="233" key="GridCell.Tab.0.right" timestamp="1583528915808">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="233" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583511195904" />
-    <state width="2517" height="233" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583513047242" />
+    <state width="2517" height="233" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583528915808" />
     <state width="1493" height="268" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583505427319" />
     <state width="2517" height="541" key="GridCell.Tab.1.bottom" timestamp="1582968612755">
       <screen x="1920" y="0" width="2560" height="1400" />
@@ -350,11 +356,11 @@
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="3015" y="635" key="ReplaceDuplicatesPrompt/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583176059803" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1583192384097">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2522" y="248" key="Vcs.Push.Dialog.v2" timestamp="1583513167971">
+      <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582376459736" />
-    <state x="2522" y="248" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582979112634" />
+    <state x="2522" y="248" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583513167971" />
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583192384097" />
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1583510731762">
       <screen x="0" y="0" width="1536" height="824" />
@@ -378,6 +384,22 @@
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2863" y="315" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583166540026" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/TicTacToe.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/TicTacToe.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Cäsar$WörterErraten.ic" NAME="WörterErraten Coverage Results" MODIFIED="1582997399058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
