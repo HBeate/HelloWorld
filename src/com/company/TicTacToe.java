@@ -8,18 +8,20 @@ public class TicTacToe {
         System.out.println("********************");
         System.out.println("Welcome to TicTacToe");
         System.out.println("********************");
-
+        int counter = 0;
         char[][] field = initializeField();
         printField(field);
 
         boolean isPlayerO = true;
-        while (true) {
+        while (true && counter < 9) {
             if (isPlayerO) {
                 System.out.println("Enter your choice Player (O)");
             } else {
                 System.out.println("Enter your choice Player (X)");
             }
             Scanner input = new Scanner(System.in);
+
+
             try {
                 String userInput = input.next();
                 String[] in = userInput.split(",");
@@ -28,20 +30,26 @@ public class TicTacToe {
 
                 if (isPlayerO && (field[x][y] == ' ')) {
                     field[x][y] = 'O';
+                    // if the counter++ is here only correct entries will be counted
+                    counter++;
                 } else if ((field[x][y] == ' ')) {
                     field[x][y] = 'X';
+                    counter++;
                 }
             } catch (Exception e) {
                 e.printStackTrace();
                 System.err.println("Bitte Format \'Zahl,Zahl\' einhalten.");
+
             }
             isPlayerO = isPlayerO ? false : true;
             printField(field);
             if (isGameOver(field)) {
                 System.out.println("We have a winner!");
-
             }
+
+
         }
+        System.out.println("Game over.");
     }
 
     private static boolean isGameOver(char[][] field) {
@@ -51,6 +59,8 @@ public class TicTacToe {
         int diagCounterX2 = 0;
         int diagCounterO = 0;
         int diagCounterO2 = 0;
+
+        boolean hasWon = false;
 
         for (int i = 0; i < field.length; i++) {
             if (field[i][0] == 'X') {
@@ -71,65 +81,55 @@ public class TicTacToe {
                 } else if (field[i][j] == 'O') {
                     counterORows++;
                 }
-// count diagonal Xs or Os from top left to bottom right
+                // count diagonal Xs or Os from top left to bottom right
                 if (i == j && field[i][j] == 'X') {
                     diagCounterX++;
                 } else if (i == j && field[i][j] == 'O') {
                     diagCounterO++;
                 }
+
             }
+            // count diagonal Xs or Os from top right to bottom left
             if (field[i][2 - i] == 'X') {
                 diagCounterX2++;
             } else if (field[i][2 - i] == 'O') {
                 diagCounterO2++;
             }
-
             if (counterXRows == 3 || diagCounterX == 3 || diagCounterX2 == 3) {
                 System.out.println("X won!!!!!!");
+                hasWon = true;
             } else if (counterORows == 3 || diagCounterO == 3 || diagCounterO2 == 3) {
                 System.out.println("O won!!!!!");
+                hasWon = true;
             }
+            if (counterXColumns[0] == 3 || counterXColumns[1] == 3 || counterXColumns[2] == 3) {
+                System.out.println("X won");
+                hasWon = true;
+            }
+//            if (counterXColumns[1] == 3) {
+//                System.out.println("X won in column 1");
+//            }
+//            if (counterXColumns[2] == 3) {
+//                System.out.println("X won in column 2");
+//            }
+            if (counterOColumns[0] == 3 || counterOColumns[1] == 3 || counterOColumns[2] == 3) {
+                System.out.println("X won in column 0");
+                hasWon = true;
+            }
+//            if (counterOColumns[1] == 3) {
+//                System.out.println("X won in column 1");
+//            }
+//            if (counterOColumns[2] == 3) {
+//                System.out.println("X won in column 2");
+//            }
 
-            //         } else if (field[0][2] == field[1][1] && field[1][1] == field[2][0] && field[2 - i][i] != ' ') {
-        }
-        if (counterXColumns[0] == 3) {
-            System.out.println("X won in column 0");
-        }
-        if (counterXColumns[1] == 3) {
-            System.out.println("X won in column 1");
-        }
-        if (counterXColumns[2] == 3) {
-            System.out.println("X won in column 2");
-        }
-        if (counterOColumns[0] == 3) {
-            System.out.println("X won in column 0");
-        }
-        if (counterOColumns[1] == 3) {
-            System.out.println("X won in column 1");
-        }
-        if (counterOColumns[2] == 3) {
-            System.out.println("X won in column 2");
-        }
-        /*for (int i = 0; i < 3; i++) {
-            if (field[i][0] == field[i][1] && field[i][1] == field[i][2] && field[i][0] != ' ') {
-                return true;
-            } else if (field[0][i] == field[1][i] && field[1][i] == field[2][i] && field[0][i] != ' ') {
-                return true;
-            } else if (field[0][0] == field[1][1] && field[1][1] == field[2][2] && field[i][i] != ' ') {
-                return true;
-            } else if (field[0][2] == field[1][1] && field[1][1] == field[2][0] && field[2 - i][i] != ' ') {
-                return true;
+            if (hasWon) {
+                System.exit(0);
             }
-            for (int j = 0; j < 3; j++) {
-                if(field[i][j] != ' '){
-                    System.out.println("Alle Felder besetzt");
-                }
-            }
-
-        } */
+        }
         return false;
-    }
 
+    }
 
     private static char[][] initializeField() {
         char[][] field = new char[3][3];
