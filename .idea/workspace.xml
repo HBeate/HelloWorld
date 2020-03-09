@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e42976aa-f687-4c1d-a555-a5a485ab8d72" name="Default Changelist" comment="">
+    <list default="true" id="e42976aa-f687-4c1d-a555-a5a485ab8d72" name="Default Changelist" comment="TicTacToe - funktioniert, muss aber noch &quot;aufgeräumt&quot; werden">
+      <change afterPath="$PROJECT_DIR$/src/com/company/VierGewinnt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/AufgabenVomBuch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/AufgabenVomBuch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TicTacToe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,22 +43,9 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="extract.method.default.visibility" value="private" />
   </component>
-  <component name="RunManager" selected="Application.TicTacToe">
+  <component name="RunManager" selected="Application.VierGewinnt">
     <configuration name="AufgabenVomBuch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.AufgabenVomBuch" />
-      <module name="Caeser" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.StringHelper" />
       <module name="Caeser" />
       <extension name="coverage">
         <pattern>
@@ -94,6 +83,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VierGewinnt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.VierGewinnt" />
+      <module name="Caeser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WörterErraten" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.WörterErraten" />
       <module name="Caeser" />
@@ -109,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TicTacToe" />
+        <item itemvalue="Application.VierGewinnt" />
         <item itemvalue="Application.AufgabenVomBuch" />
-        <item itemvalue="Application.StringsFromBookp136" />
+        <item itemvalue="Application.TicTacToe" />
         <item itemvalue="Application.WörterErraten" />
-        <item itemvalue="Application.StringHelper" />
+        <item itemvalue="Application.StringsFromBookp136" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583513166572</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="TicTacToe - funktioniert, muss aber noch &quot;aufgeräumt&quot; werden">
+      <created>1583576782289</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1583576782289</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -267,7 +276,8 @@
     <MESSAGE value="TicTacToe in Arbeit" />
     <MESSAGE value="Wörter erraten - fertig" />
     <MESSAGE value="TicTacToe - prüft, ob es einen Gewinner gibt &amp; überschreibt Inputs nicht mehr" />
-    <option name="LAST_COMMIT_MESSAGE" value="TicTacToe - prüft, ob es einen Gewinner gibt &amp; überschreibt Inputs nicht mehr" />
+    <MESSAGE value="TicTacToe - funktioniert, muss aber noch &quot;aufgeräumt&quot; werden" />
+    <option name="LAST_COMMIT_MESSAGE" value="TicTacToe - funktioniert, muss aber noch &quot;aufgeräumt&quot; werden" />
   </component>
   <component name="WindowStateProjectService">
     <state x="566" y="298" width="403" height="236" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1583239249921">
@@ -278,11 +288,11 @@
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2947" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583166544297" />
-    <state x="2627" y="14" key="CommitChangelistDialog2" timestamp="1583529102175">
+    <state x="2627" y="14" key="CommitChangelistDialog2" timestamp="1583577284560">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582376457248" />
-    <state x="2627" y="14" key="CommitChangelistDialog2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583529102175" />
+    <state x="2627" y="14" key="CommitChangelistDialog2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583577284560" />
     <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583192380617" />
     <state width="396" height="466" key="DebuggerActiveHint" timestamp="1583180758571">
       <screen x="1920" y="0" width="2560" height="1400" />
@@ -304,30 +314,30 @@
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="533" key="GridCell.Tab.-1.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582980925876" />
-    <state width="2517" height="233" key="GridCell.Tab.0.bottom" timestamp="1583576659006">
+    <state width="2517" height="300" key="GridCell.Tab.0.bottom" timestamp="1583786706427">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="233" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583511195904" />
-    <state width="2517" height="233" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583576659006" />
-    <state width="1493" height="268" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583505427319" />
-    <state width="2517" height="233" key="GridCell.Tab.0.center" timestamp="1583576659006">
+    <state width="2517" height="300" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583786706427" />
+    <state width="1493" height="214" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583684904546" />
+    <state width="2517" height="300" key="GridCell.Tab.0.center" timestamp="1583786706427">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="233" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583511195904" />
-    <state width="2517" height="233" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583576659006" />
-    <state width="1493" height="268" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583505427319" />
-    <state width="2517" height="233" key="GridCell.Tab.0.left" timestamp="1583576659006">
+    <state width="2517" height="300" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583786706427" />
+    <state width="1493" height="214" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583684904546" />
+    <state width="2517" height="300" key="GridCell.Tab.0.left" timestamp="1583786706427">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="233" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583511195904" />
-    <state width="2517" height="233" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583576659006" />
-    <state width="1493" height="268" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583505427319" />
-    <state width="2517" height="233" key="GridCell.Tab.0.right" timestamp="1583576659006">
+    <state width="2517" height="300" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583786706427" />
+    <state width="1493" height="214" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583684904546" />
+    <state width="2517" height="300" key="GridCell.Tab.0.right" timestamp="1583786706427">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="233" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583511195904" />
-    <state width="2517" height="233" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583576659006" />
-    <state width="1493" height="268" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583505427319" />
+    <state width="2517" height="300" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583786706427" />
+    <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583684904546" />
     <state width="2517" height="541" key="GridCell.Tab.1.bottom" timestamp="1582968612755">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
@@ -356,16 +366,17 @@
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="3015" y="635" key="ReplaceDuplicatesPrompt/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583176059803" />
-    <state x="2522" y="248" key="Vcs.Push.Dialog.v2" timestamp="1583529105312">
+    <state x="2522" y="248" key="Vcs.Push.Dialog.v2" timestamp="1583576784054">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582376459736" />
-    <state x="2522" y="248" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583529105312" />
+    <state x="2522" y="248" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583576784054" />
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583192384097" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1583568233155">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1583769532817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583568233155" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583769532817" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583734787793" />
     <state x="2904" y="594" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583166550911">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
@@ -374,11 +385,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1582312561322" />
-    <state x="742" y="85" width="538" height="459" key="extract.method.dialog" timestamp="1583239155914">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="3157" y="144" width="538" height="459" key="extract.method.dialog" timestamp="1583773471090">
+      <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="742" y="85" key="extract.method.dialog/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582372180233" />
-    <state x="3157" y="144" width="540" height="496" key="extract.method.dialog/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583176263329" />
+    <state x="3157" y="144" width="540" height="496" key="extract.method.dialog/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583773471090" />
     <state x="742" y="85" width="538" height="459" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1583239155914" />
     <state x="2863" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1583166540026">
       <screen x="1920" y="0" width="2560" height="1400" />
@@ -390,8 +401,39 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/TicTacToe.java</url>
-          <line>64</line>
+          <line>63</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/AufgabenVomBuch.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/VierGewinnt.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/VierGewinnt.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/company/VierGewinnt.java</url>
+          <line>64</line>
+          <properties class="com.company.VierGewinnt" method="isWinner">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/company/VierGewinnt.java</url>
+          <line>99</line>
+          <properties class="com.company.VierGewinnt" method="initializeGameField">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

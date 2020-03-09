@@ -21,7 +21,6 @@ public class TicTacToe {
             }
             Scanner input = new Scanner(System.in);
 
-
             try {
                 String userInput = input.next();
                 String[] in = userInput.split(",");
@@ -106,23 +105,10 @@ public class TicTacToe {
                 System.out.println("X won");
                 hasWon = true;
             }
-//            if (counterXColumns[1] == 3) {
-//                System.out.println("X won in column 1");
-//            }
-//            if (counterXColumns[2] == 3) {
-//                System.out.println("X won in column 2");
-//            }
             if (counterOColumns[0] == 3 || counterOColumns[1] == 3 || counterOColumns[2] == 3) {
                 System.out.println("X won in column 0");
                 hasWon = true;
             }
-//            if (counterOColumns[1] == 3) {
-//                System.out.println("X won in column 1");
-//            }
-//            if (counterOColumns[2] == 3) {
-//                System.out.println("X won in column 2");
-//            }
-
             if (hasWon) {
                 System.exit(0);
             }
