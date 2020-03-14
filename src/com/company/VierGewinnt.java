@@ -1,6 +1,5 @@
 package com.company;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class VierGewinnt {
@@ -31,12 +30,11 @@ public class VierGewinnt {
         // TODO check Error Inputs...
         Scanner input = new Scanner(System.in);
 
-
         try {
             int userInput = input.nextInt();
             int row = 0;
 
-            if (field[0][userInput] != ' ') {
+            if (field[0][userInput] != ' ' || userInput > 6) {
                 System.out.println("Column " + userInput + " is full. Try it again.");
                 return false;
             } else {
@@ -49,42 +47,125 @@ public class VierGewinnt {
                             field[row][userInput] = 'X';
                         }
                         break;
-
                     }
-
                 }
             }
         } catch (Exception e) {
             e.printStackTrace();
             System.err.println("Please enter a number from 0 to 6!");
+            isPlayerO = !isPlayerO;
+            return false;
         }
         return true;
-
     }
 
     private static boolean isWinner(char[][] field) {
 
+//Search rows
+        for (int row = 0; row < field.length; row++) {
+            int rowCountO = 0;
+            int rowCountX = 0;
+            for (int col = 0; col < field[row].length; col++) {
+                if (field[row][col] == 'O') {
+                    rowCountO++;
+                } else {
+                    rowCountO = 0;
+                }
 
-        for (int row = 0; row < 3; row++) {
-            for (int col = 0; col < 4; col++) {
-                if (field[row][col] == field[row][col + 1] && field[row][col + 2] == field[row][col + 3] && field[row][col] == field[row][col + 3] && field[row][col] != ' ') {
-                    System.out.println("There is a winner - ROW");
-                    break;
+                if (rowCountO == 4) {
+                    System.out.println("yay - rowsO");
                 }
-                if (field[row][col] == field[row+1][col] && field[row+2][col] == field[row+3][col] && field[row][col] == field[row+3][col] && field[row][col] != ' ') {
-                    System.out.println("There is a winner - COLUMN");
-                    break;
+                if (field[row][col] == 'X') {
+                    rowCountX++;
+                } else {
+                    rowCountX = 0;
                 }
-                if (field[row][col] == field[row+1][col+1] && field[row+2][col+2] == field[row+3][col+3] && field[row][col] == field[row+3][col+3] && field[row][col] != ' ') {
-                    System.out.println("There is a winner - DIAGONAL");
-                    break;
+
+                if (rowCountX == 4) {
+                    System.out.println("yay - rowsX");
+                }
+            }
+        }
+//Search columns
+        for (int col = 0; col < field.length; col++) {
+            int colCountO = 0;
+            int colCountX = 0;
+            for (int row = 0; row < field.length; row++) {
+                if (field[row][col] == 'O') {
+                    colCountO++;
+                } else {
+                    colCountO = 0;
+                }
+
+                if (colCountO == 4) {
+                    System.out.println("yay - columnsO");
+                }
+                if (field[row][col] == 'X') {
+                    colCountX++;
+                } else {
+                    colCountX = 0;
+                }
+
+                if (colCountX == 4) {
+                    System.out.println("yay - columnsX");
                 }
             }
         }
 
+//search diagonal field[i][i] -> 00 - 11 - 22 - 33 - 44 - 55
+
+        for (int i = 0; i < field.length; i++) {
+            int diagCountO = 0;
+            int diagCountX = 0;
+            for (int j = 0; j < field.length; j++) {
+
+            }
+            if (field[i][i] == 'O') {
+                diagCountO++;
+
+            } else {
+                diagCountO = 0;
+            }
+            if (diagCountO == 4) {
+                System.out.println("yay - diagCountO [i][i]");
+            }
+            if (field[i][i] == 'X') {
+                diagCountX++;
+            } else {
+                diagCountX = 0;
+            }
+            if (diagCountX == 4) {
+                System.out.println("yay - diagCountX [i][i]");
+            }
+        }
+//search diagonal top left down [i+1][j+1]
+        int diagTopLeftDownCountO = 0;
+        int diagTopLeftDownCountX = 0;
+        for (int i = 0; i < field.length; i++) {
+
+            if (field[i][i] == 'O') {
+                diagTopLeftDownCountO++;
+
+            } else {
+                diagTopLeftDownCountO = 0;
+            }
+            if (diagTopLeftDownCountO == 4) {
+                System.out.println("yay - diagTopLeftDownCountO");
+            }
+            if (field[i][i] == 'X') {
+                diagTopLeftDownCountX++;
+            } else {
+                diagTopLeftDownCountX = 0;
+            }
+            if (diagTopLeftDownCountX == 4) {
+                System.out.println("yay - diagTopLeftDownCountX");
+            }
+        }
+
+
+
         return true;
     }
-
 
     private static boolean isFieldFull(char[][] field) {
         for (int row = 0; row < 6; row++) {
