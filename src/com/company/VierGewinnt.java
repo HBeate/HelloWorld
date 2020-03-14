@@ -117,9 +117,6 @@ public class VierGewinnt {
         for (int i = 0; i < field.length; i++) {
             int diagCountO = 0;
             int diagCountX = 0;
-            for (int j = 0; j < field.length; j++) {
-
-            }
             if (field[i][i] == 'O') {
                 diagCountO++;
 
@@ -138,34 +135,38 @@ public class VierGewinnt {
                 System.out.println("yay - diagCountX [i][i]");
             }
         }
-//search diagonal top left down [i+1][j+1]
-        int diagTopLeftDownCountO = 0;
-        int diagTopLeftDownCountX = 0;
-        for (int i = 0; i < field.length; i++) {
+////search diagonal top left down
 
-            if (field[i][i] == 'O') {
-                diagTopLeftDownCountO++;
+        for (int row = 0; row < field.length - 3; row++) {
 
-            } else {
-                diagTopLeftDownCountO = 0;
-            }
-            if (diagTopLeftDownCountO == 4) {
-                System.out.println("yay - diagTopLeftDownCountO");
-            }
-            if (field[i][i] == 'X') {
-                diagTopLeftDownCountX++;
-            } else {
-                diagTopLeftDownCountX = 0;
-            }
-            if (diagTopLeftDownCountX == 4) {
-                System.out.println("yay - diagTopLeftDownCountX");
+            for (int col = 0; col < field[row].length - 3; col++) {
+
+                if ((field[row][col] == 'O') && (field[row][col] == field[row + 1][col + 1]) && (field[row][col] == field[row + 3][col + 3]) && (field[row + 2][col + 2] == field[row + 3][col + 3])) {
+                    System.out.println("yay - diagTopLeftDownCountO");
+                } else if ((field[row][col] == 'X') && (field[row][col] == field[row + 1][col + 1]) && (field[row][col] == field[row + 3][col + 3]) && (field[row + 2][col + 2] == field[row + 3][col + 3])) {
+                    System.out.println("yay - diagTopLeftDownCountX");
+                }
             }
         }
+        // search diagonal bottom left to top right
+        // TODO: doesn't work properly
+        for (int row = 5; row > 2; row--) {
 
+            for (int col = 0; col < 4; col++) {
 
+             if ((field[col][row] == 'O') && (field[col][row] == field[col + 1][row - 1]) && (field[col + 1][row - 1] == field[col + 2][row - 2]) && (field[col + 2][row - 2] == field[col + 3][row - 3])) {
 
+                    //               if ((field[col][row] == 'O') && (field[col][row] == field[col + 1][row - 1]) && (field[col][row] == field[col + 3][row - 3]) && (field[col + 2][row - 2] == field[col + 3][row - 3])) {
+                    System.out.println("yay - diagBottomLeftTotTopCountO");
+                } else if ((field[col][row] == 'X') && (field[col][row] == field[col + 1][row - 1]) && (field[col][row] == field[col + 3][row - 3]) && (field[col + 2][row - 2] == field[col + 3][row - 3])) {
+                    System.out.println("yay - diagBottomLeftTotTopCountX");
+                }
+            }
+
+        }
         return true;
     }
+
 
     private static boolean isFieldFull(char[][] field) {
         for (int row = 0; row < 6; row++) {

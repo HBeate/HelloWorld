@@ -261,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583787747312</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Vier Gewinnt - diagonale isWinner Prüfung fehlt noch (Vertikal, horizontal und 00, 11, 22, ... funktionieren">
+      <created>1584175129334</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1584175129334</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -283,7 +290,8 @@
     <MESSAGE value="TicTacToe - prüft, ob es einen Gewinner gibt &amp; überschreibt Inputs nicht mehr" />
     <MESSAGE value="TicTacToe - funktioniert, muss aber noch &quot;aufgeräumt&quot; werden" />
     <MESSAGE value="Vier Gewinnt - Eingabe &amp; Fehlermeldung funktionieren; arbeite an isWinner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vier Gewinnt - Eingabe &amp; Fehlermeldung funktionieren; arbeite an isWinner" />
+    <MESSAGE value="Vier Gewinnt - diagonale isWinner Prüfung fehlt noch (Vertikal, horizontal und 00, 11, 22, ... funktionieren" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vier Gewinnt - diagonale isWinner Prüfung fehlt noch (Vertikal, horizontal und 00, 11, 22, ... funktionieren" />
   </component>
   <component name="WindowStateProjectService">
     <state x="566" y="298" width="403" height="236" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1583239249921">
@@ -294,11 +302,11 @@
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2947" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583166544297" />
-    <state x="2627" y="14" key="CommitChangelistDialog2" timestamp="1583787746271">
+    <state x="2627" y="14" key="CommitChangelistDialog2" timestamp="1584175128321">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582376457248" />
-    <state x="2627" y="14" key="CommitChangelistDialog2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583787746271" />
+    <state x="2627" y="14" key="CommitChangelistDialog2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584175128321" />
     <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583192380617" />
     <state width="396" height="466" key="DebuggerActiveHint" timestamp="1583180758571">
       <screen x="1920" y="0" width="2560" height="1400" />
@@ -320,29 +328,29 @@
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="533" key="GridCell.Tab.-1.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582980925876" />
-    <state width="2517" height="300" key="GridCell.Tab.0.bottom" timestamp="1584174579875">
+    <state width="2517" height="300" key="GridCell.Tab.0.bottom" timestamp="1584183784224">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="233" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583511195904" />
-    <state width="2517" height="300" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584174579875" />
+    <state width="2517" height="300" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584183784224" />
     <state width="1493" height="214" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583684904546" />
-    <state width="2517" height="300" key="GridCell.Tab.0.center" timestamp="1584174579875">
+    <state width="2517" height="300" key="GridCell.Tab.0.center" timestamp="1584183784224">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="233" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583511195904" />
-    <state width="2517" height="300" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584174579875" />
+    <state width="2517" height="300" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584183784224" />
     <state width="1493" height="214" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583684904546" />
-    <state width="2517" height="300" key="GridCell.Tab.0.left" timestamp="1584174579875">
+    <state width="2517" height="300" key="GridCell.Tab.0.left" timestamp="1584183784224">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="233" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583511195904" />
-    <state width="2517" height="300" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584174579875" />
+    <state width="2517" height="300" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584183784224" />
     <state width="1493" height="214" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583684904546" />
-    <state width="2517" height="300" key="GridCell.Tab.0.right" timestamp="1584174579875">
+    <state width="2517" height="300" key="GridCell.Tab.0.right" timestamp="1584183784224">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="1493" height="233" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583511195904" />
-    <state width="2517" height="300" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584174579875" />
+    <state width="2517" height="300" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584183784224" />
     <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583684904546" />
     <state width="2517" height="541" key="GridCell.Tab.1.bottom" timestamp="1582968612755">
       <screen x="1920" y="0" width="2560" height="1400" />
@@ -372,11 +380,11 @@
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="3015" y="635" key="ReplaceDuplicatesPrompt/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583176059803" />
-    <state x="2522" y="248" key="Vcs.Push.Dialog.v2" timestamp="1583787749945">
+    <state x="2522" y="248" key="Vcs.Push.Dialog.v2" timestamp="1584175130933">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582376459736" />
-    <state x="2522" y="248" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583787749945" />
+    <state x="2522" y="248" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584175130933" />
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583192384097" />
     <state x="2695" y="404" key="com.intellij.ide.util.TipDialog" timestamp="1584172986977">
       <screen x="1920" y="0" width="2560" height="1400" />
@@ -418,8 +426,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/VierGewinnt.java</url>
-          <line>116</line>
-          <option name="timeStamp" value="32" />
+          <line>155</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
