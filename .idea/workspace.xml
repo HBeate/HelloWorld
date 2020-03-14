@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e42976aa-f687-4c1d-a555-a5a485ab8d72" name="Default Changelist" comment="">
+    <list default="true" id="e42976aa-f687-4c1d-a555-a5a485ab8d72" name="Default Changelist" comment="Vier Gewinnt - diagonale isWinner Prüfung fehlt noch (Vertikal, horizontal und 00, 11, 22, ... funktionieren">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/VierGewinnt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/VierGewinnt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TicTacToe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +40,9 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OOP" />
   </component>
-  <component name="RunManager" selected="Application.VierGewinnt">
+  <component name="RunManager" selected="Application.TicTacToe">
     <configuration name="AufgabenVomBuch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.AufgabenVomBuch" />
       <module name="Caeser" />
@@ -109,9 +110,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TicTacToe" />
         <item itemvalue="Application.VierGewinnt" />
         <item itemvalue="Application.AufgabenVomBuch" />
-        <item itemvalue="Application.TicTacToe" />
         <item itemvalue="Application.WörterErraten" />
         <item itemvalue="Application.StringsFromBookp136" />
       </list>
@@ -268,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584175129334</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Vier Gewinnt - diagonale isWinner Prüfung fehlt noch (Vertikal, horizontal und 00, 11, 22, ... funktionieren">
+      <created>1584183921237</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1584183921237</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -302,16 +310,20 @@
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2947" y="568" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583166544297" />
-    <state x="2627" y="14" key="CommitChangelistDialog2" timestamp="1584175128321">
+    <state x="2627" y="14" key="CommitChangelistDialog2" timestamp="1584184084223">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582376457248" />
-    <state x="2627" y="14" key="CommitChangelistDialog2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584175128321" />
+    <state x="2627" y="14" key="CommitChangelistDialog2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584184084223" />
     <state x="424" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583192380617" />
     <state width="396" height="466" key="DebuggerActiveHint" timestamp="1583180758571">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="396" height="466" key="DebuggerActiveHint/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583180758571" />
+    <state x="2980" y="456" key="FileChooserDialogImpl" timestamp="1584184833907">
+      <screen x="1920" y="0" width="2560" height="1400" />
+    </state>
+    <state x="2980" y="456" key="FileChooserDialogImpl/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584184833907" />
     <state width="2517" height="541" key="GridCell.Tab.-1.bottom" timestamp="1582968622809">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
@@ -328,30 +340,30 @@
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="533" key="GridCell.Tab.-1.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582980925876" />
-    <state width="2517" height="300" key="GridCell.Tab.0.bottom" timestamp="1584183784224">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state width="1493" height="154" key="GridCell.Tab.0.bottom" timestamp="1584217898665">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="233" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583511195904" />
-    <state width="2517" height="300" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584183784224" />
-    <state width="1493" height="214" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583684904546" />
-    <state width="2517" height="300" key="GridCell.Tab.0.center" timestamp="1584183784224">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state width="2517" height="519" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584184092956" />
+    <state width="1493" height="154" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584217898665" />
+    <state width="1493" height="154" key="GridCell.Tab.0.center" timestamp="1584217898665">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="233" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583511195904" />
-    <state width="2517" height="300" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584183784224" />
-    <state width="1493" height="214" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583684904546" />
-    <state width="2517" height="300" key="GridCell.Tab.0.left" timestamp="1584183784224">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state width="2517" height="519" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584184092956" />
+    <state width="1493" height="154" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584217898665" />
+    <state width="1493" height="154" key="GridCell.Tab.0.left" timestamp="1584217898665">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="233" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583511195904" />
-    <state width="2517" height="300" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584183784224" />
-    <state width="1493" height="214" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583684904546" />
-    <state width="2517" height="300" key="GridCell.Tab.0.right" timestamp="1584183784224">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state width="2517" height="519" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584184092956" />
+    <state width="1493" height="154" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584217898665" />
+    <state width="1493" height="154" key="GridCell.Tab.0.right" timestamp="1584217898665">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="233" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583511195904" />
-    <state width="2517" height="300" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584183784224" />
-    <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583684904546" />
+    <state width="2517" height="519" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584184092956" />
+    <state width="1493" height="154" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584217898665" />
     <state width="2517" height="541" key="GridCell.Tab.1.bottom" timestamp="1582968612755">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
@@ -376,22 +388,26 @@
     <state width="1478" height="324" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582568626045" />
     <state width="2517" height="541" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1582968612755" />
     <state width="2517" height="610" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582578668314" />
+    <state x="2865" y="400" key="NewModule_or_Project.wizard" timestamp="1584184846405">
+      <screen x="1920" y="0" width="2560" height="1400" />
+    </state>
+    <state x="2865" y="400" key="NewModule_or_Project.wizard/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584184846405" />
     <state x="3015" y="635" key="ReplaceDuplicatesPrompt" timestamp="1583176059803">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="3015" y="635" key="ReplaceDuplicatesPrompt/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1583176059803" />
-    <state x="2522" y="248" key="Vcs.Push.Dialog.v2" timestamp="1584175130933">
+    <state x="2522" y="248" key="Vcs.Push.Dialog.v2" timestamp="1584183923173">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1582376459736" />
-    <state x="2522" y="248" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584175130933" />
+    <state x="2522" y="248" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584183923173" />
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583192384097" />
-    <state x="2695" y="404" key="com.intellij.ide.util.TipDialog" timestamp="1584172986977">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1584216809189">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1583769532817" />
-    <state x="2695" y="404" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584172986977" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583734787793" />
+    <state x="2695" y="404" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1584184223191" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584216809189" />
     <state x="2904" y="594" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583166550911">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
@@ -423,11 +439,6 @@
           <url>file://$PROJECT_DIR$/src/com/company/AufgabenVomBuch.java</url>
           <line>25</line>
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/VierGewinnt.java</url>
-          <line>155</line>
-          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

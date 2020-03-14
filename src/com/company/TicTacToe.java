@@ -71,6 +71,15 @@ public class TicTacToe {
             if (field[i][2] == 'X') {
                 counterXColumns[2]++;
             }
+            if (field[i][0] == 'O') {
+                counterOColumns[0]++;
+            }
+            if (field[i][1] == 'O') {
+                counterOColumns[1]++;
+            }
+            if (field[i][2] == 'O') {
+                counterOColumns[2]++;
+            }
             int counterXRows = 0;
             int counterORows = 0;
 
@@ -95,18 +104,18 @@ public class TicTacToe {
                 diagCounterO2++;
             }
             if (counterXRows == 3 || diagCounterX == 3 || diagCounterX2 == 3) {
-                System.out.println("X won!!!!!!");
+                System.out.println("X won!");
                 hasWon = true;
             } else if (counterORows == 3 || diagCounterO == 3 || diagCounterO2 == 3) {
-                System.out.println("O won!!!!!");
+                System.out.println("O won!");
                 hasWon = true;
             }
             if (counterXColumns[0] == 3 || counterXColumns[1] == 3 || counterXColumns[2] == 3) {
-                System.out.println("X won");
+                System.out.println("X won!");
                 hasWon = true;
             }
             if (counterOColumns[0] == 3 || counterOColumns[1] == 3 || counterOColumns[2] == 3) {
-                System.out.println("X won in column 0");
+                System.out.println("O won!");
                 hasWon = true;
             }
             if (hasWon) {
